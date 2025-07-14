@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            padding: 20px;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+
+        h2 {
+            font-size: 1.3rem;
+            color: #666;
+            margin-bottom: 20px;
+            margin-top: 30px;
+            font-weight: normal;
+        }
+
+        h2:first-of-type {
+            margin-top: 0;
+        }
+
+        .movies-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .movie-card {
+            background-color: #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            aspect-ratio: 2/3;
+            position: relative;
+        }
+
+        .movie-poster {
+            width: 100%;
+            height: 100%;
+            background-color: #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.9rem;
+            color: #666;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .movie-poster img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .movies-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            .movies-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
+            }
+        }
+    </style>
+<body>
+    <div class="container">
+        <h1>FLIX EJEMPLO</h1>
+
+        <h2>Películas Infantiles</h2>
+        <div class="movies-grid">
+            <div class="movie-card">
+                <div class="movie-poster">
+                    <img src="imagenes/ayo-ogunseinde-Erstoy-MuVA-unsplash.jpg" alt="Sonic">
+                </div>
+            </div>
+            <div class="movie-card">
+                <div class="movie-poster">
+                    <img src="imagenes/bruno-guerrero-l9Lo8jwQVv8-unsplash.jpg" alt="Playing with Fire">
+                </div>
+            </div>
+            <div class="movie-card">
+                <div class="movie-poster">
+                    <img src="imagenes/erik-mclean-7sgU1jV8-iw-unsplash.jpg" alt="Dora">
+                </div>
+            </div>
+            <div class="movie-card">
+                <div class="movie-poster">
+                    <img src="imagenes/hector-reyes-PXjQaGxi4JA-unsplash.jpg" alt="Dolittle">
+                </div>
+            </div>
+        </div>
+
+        <h2>Películas de Acción</h2>
+        <div class="movies-grid">
+            <div class="movie-card">
+                <div class="movie-poster">
+                    <img src="imagenes/jason-leung-gm--2srYAIY-unsplash.jpg" alt="Birds of Prey">
+                </div>
+            </div>
+            <div class="movie-card">
+                <div class="movie-poster">
+                    <img src="imagenes/jerry-kavan-3FA80_d8rHo-unsplash.jpg" alt="Bloodshot">
+                </div>
+            </div>
+            <div class="movie-card">
+                <div class="movie-poster">
+                    <img src="imagenes/joel-muniz-yRQ6EL25vxU-unsplash.jpg" alt="Misión de Rescate">
+                </div>
+            </div>
+            <div class="movie-card">
+                <div class="movie-poster">
+                    <img src="imagenes/samuel-regan-asante-wMkaMXTJjlQ-unsplash.jpg" alt="The Courier">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
